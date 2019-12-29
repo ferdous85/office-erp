@@ -14,14 +14,18 @@ import TimerIcon from '@material-ui/icons/Timer';
 import PeopleIcon from '@material-ui/icons/People';
 import PublicIcon from '@material-ui/icons/Public';
 import SettingsIcon from '@material-ui/icons/Settings';
-import DnsRoundedIcon from '@material-ui/icons/DnsRounded';
+//import DnsRoundedIcon from '@material-ui/icons/DnsRounded';
 import PhonelinkSetupIcon from '@material-ui/icons/PhonelinkSetup';
 import SettingsEthernetIcon from '@material-ui/icons/SettingsEthernet';
 import PermMediaOutlinedIcon from '@material-ui/icons/PhotoSizeSelectActual';
 //import SettingsInputComponentIcon from '@material-ui/icons/SettingsInputComponent';
-import EmployeeReg from '../components/officeMngHrm/EmployeeReg'
+//import EmployeeReg from '../components/officeMngHrm/EmployeeReg'
+import EmployeeRegee from '../components/employeereg/EmployeeRegee'
 import Attendance from '../components/officeMngHrm/Attendance'
-
+import Training from '../components/officeMngHrm/Training'
+import CompanyStructure from '../components/companystr/CompanyStructure'
+import CapitalAccounts from '../components/accounts/CapitalAccounts'
+//EmployeeRegee
 export const categories = [
   {
     id: 'Office ERP',
@@ -32,23 +36,18 @@ export const categories = [
     id: 'Office MNG/HRM',
     children: [
       {id: 'Company Structure', url: '/companystr', 
-      component: <img src={process.env.PUBLIC_URL + "/new-picture.png"} 
-      alt="Logo" width="1000px"  />, icon: <PeopleIcon />},
-      {id: 'Dept and Desig', url: '/deptanddesig',component: <img src={process.env.PUBLIC_URL + "./Business-Hierarchy.jpg"} 
-      alt="Logo" width="1000px"  /> , icon: <DnsRoundedIcon />},
-      {id: 'Employee', url: '/employee', component: <EmployeeReg /> , icon: <PermMediaOutlinedIcon />},
+      component: <CompanyStructure /> , icon: <PeopleIcon />},
+      
+      {id: 'Employee', url: '/employee', component: <EmployeeRegee /> , icon: <PermMediaOutlinedIcon />},
       {id: 'Attendence', url: '/attendance', component: <Attendance /> , icon: <PublicIcon />},
-      {id: 'Training', url: '/training', component: <img src={process.env.PUBLIC_URL + "/training.jpg"} 
-      alt="Logo" width="1000px"  /> , icon: <SettingsEthernetIcon />}
+      {id: 'Training', url: '/training', component: <Training /> , icon: <SettingsEthernetIcon />}
       
     ],
   },
   {
     id: 'Accounts',
     children: [
-      {id: 'Capital Account', url: '/capitalaccount', component: <h1>This a Capital Account
-        section. This page is undercontruction ..........
-      </h1> ,  icon: <SettingsIcon />},
+      {id: 'Capital Account', url: '/capitalaccount', component: <CapitalAccounts /> ,  icon: <SettingsIcon />},
       {id: 'Share', url: '/share', component: <h1>This a Share
       section. This page is undercontruction ..........
     </h1> ,   icon: <TimerIcon />},

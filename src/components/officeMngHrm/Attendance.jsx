@@ -1,4 +1,5 @@
 import React from 'react';
+import {  } from "react-router-dom";
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -7,6 +8,9 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/Button';
+
+//Button
 
 const StyledTableCell = withStyles(theme => ({
                         head: {
@@ -31,11 +35,11 @@ function createData(name, calories, fat, carbs, protein) {
                         }
 
                         const rows = [
-                                    createData('Biprodas Roy', 159, 6.0, 24, 4.0),
-                                    createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-                                    createData('Eclair', 262, 16.0, 24, 6.0),
-                                    createData('Cupcake', 305, 3.7, 67, 4.3),
-                                    createData('Gingerbread', 356, 16.0, 49, 3.9),
+                                    createData('Biprodas Roy', 101, 6.0, 24, 4.0),
+                                    createData('Milon Hossain', 237, 9.0, 37, 4.3),
+                                    createData('Swadip Roy', 262, 16.0, 24, 6.0),
+                                    createData('Ishtiqur Rahman', 305, 3.7, 67, 4.3),
+                                    createData('Ismity', 356, 16.0, 49, 3.9),
                                     ];
 
                         const useStyles = makeStyles({
@@ -59,6 +63,8 @@ function createData(name, calories, fat, carbs, protein) {
                                     <StyledTableCell align="right">Attendance Status</StyledTableCell>
                                     <StyledTableCell align="right">Working Days</StyledTableCell>
                                     <StyledTableCell align="right">Leave</StyledTableCell>
+                                    <Button color="primary" >Attendence</Button>
+                                    
                                 </TableRow>
                                 </TableHead>
                                 <TableBody>

@@ -1,9 +1,11 @@
 import React, {  } from "react";
+
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import MenuItem from '@material-ui/core/MenuItem';
 import Container from '@material-ui/core/Container';
+
 //import DatePicker from './DatePicker'
 // import { DatePicker } from "@material-ui/pickers";
 
@@ -98,7 +100,7 @@ const gender = [
 const useStyles = makeStyles(theme => ({
                         root: {
                             '& > * .MuiTextField-root': {
-                            margin: theme.spacing(1),
+                            margin: theme.spacing.unit*1,
                             width: 150,
                             },
 
